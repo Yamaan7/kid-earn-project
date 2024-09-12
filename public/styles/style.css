@@ -1,89 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-/* styles/globals.css */
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('/fonts/fa-brands-400.eot');
-  /* IE9 Compat Modes */
-  src: url('/fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('/fonts/fa-brands-400.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('/fonts/fa-brands-400.woff') format('woff'),
-    /* Pretty Modern Browsers */
-    url('/fonts/fa-brands-400.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('/fonts/fa-brands-400.svg#fontawesome') format('svg');
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400; */
-/* Adjust weight as needed (300, 400, 500, 600, 700) */
-/* font-style: normal;
-  font-variation-settings: "wdth" 100;
-} */
-
-
-.fa {
-  font-family: 'FontAwesome', sans-serif;
-}
-
-.icon {
-  font-family: 'FontAwesome', sans-serif;
-}
-
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'FontAwesome', Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot');
-  src: url('/fonts/icomoon.eot#iefix') format('embedded-opentype'),
-    url('/fonts/icomoon.ttf') format('truetype'),
-    url('/fonts/icomoon.woff') format('woff'),
-    url('/images/icomoon.svg#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../images/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -101,167 +28,126 @@ body {
 .icon-art-studies:before {
   content: "\e928";
 }
-
 .icon-discipline:before {
   content: "\e929";
 }
-
 .icon-close:before {
   content: "\e91b";
 }
-
 .icon-curve-arrow:before {
   content: "\e927";
 }
-
 .icon-plus:before {
   content: "\e911";
 }
-
 .icon-minus:before {
   content: "\e917";
 }
-
 .icon-clock:before {
   content: "\e923";
 }
-
 .icon-online-learning:before {
   content: "\e900";
 }
-
 .icon-graduated:before {
   content: "\e903";
 }
-
 .icon-envelope:before {
   content: "\e901";
 }
-
 .icon-search:before {
   content: "\e905";
 }
-
 .icon-location:before {
   content: "\e906";
 }
-
 .icon-call:before {
   content: "\e907";
 }
-
 .icon-charity:before {
   content: "\e908";
 }
-
 .icon-chat:before {
   content: "\e909";
 }
-
 .icon-crawling-baby-silhouette:before {
   content: "\e90a";
 }
-
 .icon-eco-house:before {
   content: "\e90b";
 }
-
 .icon-email:before {
   content: "\e90c";
 }
-
 .icon-email1:before {
   content: "\e90d";
 }
-
 .icon-location1:before {
   content: "\e90e";
 }
-
 .icon-clock1:before {
   content: "\e90f";
 }
-
 .icon-fun:before {
   content: "\e910";
 }
-
 .icon-happy-children:before {
   content: "\e912";
 }
-
 .icon-instructor:before {
   content: "\e913";
 }
-
 .icon-interest-rate:before {
   content: "\e914";
 }
-
 .icon-juggler:before {
   content: "\e915";
 }
-
 .icon-left-arrow:before {
   content: "\e916";
 }
-
 .icon-up-arrow:before {
   content: "\e902";
 }
-
 .icon-down-arrow:before {
   content: "\e904";
 }
-
 .icon-location2:before {
   content: "\e918";
 }
-
 .icon-location-fill:before {
   content: "\e919";
 }
-
 .icon-envelope-open:before {
   content: "\e91a";
 }
-
 .icon-playtime:before {
   content: "\e91c";
 }
-
 .icon-presentation:before {
   content: "\e91d";
 }
-
 .icon-rating:before {
   content: "\e91e";
 }
-
 .icon-right-arrow:before {
   content: "\e91f";
 }
-
 .icon-safety:before {
   content: "\e920";
 }
-
 .icon-telephone:before {
   content: "\e921";
 }
-
 .icon-timer:before {
   content: "\e922";
 }
-
 .icon-trolley-cart:before {
   content: "\e924";
 }
-
 .icon-trophy:before {
   content: "\e925";
 }
-
 .icon-trophy1:before {
   content: "\e926";
 }
