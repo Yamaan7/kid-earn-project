@@ -280,8 +280,8 @@ body {
 }
 
 .sticky-button {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,8 +315,8 @@ body {
   position: fixed;
   bottom: 50px;
   left: 30px;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   background-color: white;
   /* Button background color */
   border-radius: 50%;
@@ -356,4 +356,15 @@ body {
   color: black;
   position: relative;
   z-index: 2;
+}
+
+
+/* Trophy icon - change to orange */
+.trophy-icon {
+  filter: hue-rotate(30deg) saturate(10) brightness(1.2);
+}
+
+/* Interest rate icon - change to blue */
+.interest-rate-icon {
+  filter: hue-rotate(210deg) saturate(10) brightness(1.2);
 }

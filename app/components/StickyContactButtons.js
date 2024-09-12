@@ -8,12 +8,12 @@ const StickyContactButtons = () => {
         <div className="sticky-buttons">
             {/* WhatsApp Button */}
             <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="sticky-button whatsapp">
-                <FaWhatsapp size={24} />
+                <FaWhatsapp size={50} />
             </a>
 
             {/* Phone Button */}
             <a href="tel:+yourphonenumber" className="sticky-button phone">
-                <FaPhone size={24} />
+                <FaPhone size={50} />
             </a>
         </div>
     );
