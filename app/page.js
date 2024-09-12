@@ -18,15 +18,12 @@ import Footer from "./components/Footer";
 import MobileNav from "./components/MobileNav";
 import SearchPopup from "./components/SearchPopUp";
 import ScrollTopButton from "./components/ScrollTopButton";
+import StickyContactButtons from './components/StickyContactButtons';
 
 export default function Home() {
   return (
     <ParallaxProvider>
       <div className="custom-cursor">
-        {/* Custom cursors */}
-        <div className="custom-cursor__cursor"></div>
-        <div className="custom-cursor__cursor-two"></div>
-        {/* Page wrapper */}
         <div className="page-wrapper">
           <Topbar />
           <Header />
@@ -41,10 +38,10 @@ export default function Home() {
           <BlogThree />
           <Footer />
         </div>
-        {/* /.page-wrapper */}
         <MobileNav />
         <SearchPopup />
         <ScrollTopButton />
+        <StickyContactButtons />
       </div>
     </ParallaxProvider>
   );

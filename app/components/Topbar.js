@@ -7,6 +7,8 @@ import React from 'react';
 const Topbar = () => {
     return (
         <div className="topbar-one">
+            <div className="custom-cursor__cursor"></div>
+            <div className="custom-cursor__cursor-two"></div>
             <div className="container-fluid">
                 <div className="topbar-one__inner">
                     <div className="topbar-one__left">
