@@ -6,6 +6,8 @@ import { EmailIcon } from './EmailIcon';
 import CallIcon2 from './CallIcon2';
 import { LocationIcon } from './LocationIcon';
 import HamburgerMenu from './HamburgerMenu';
+import ScrollTopButton from './ScrollTopButton';
+import StickyContactButtons from './StickyContactButtons';
 
 const Footer = () => {
     return (
@@ -109,7 +111,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
+            <ScrollTopButton />
+            <StickyContactButtons />
         </footer>
     );
 };

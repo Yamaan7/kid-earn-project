@@ -2,7 +2,6 @@
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-import Image from "next/image";
 import Topbar from "./components/Topbar";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
@@ -17,8 +16,6 @@ import BlogThree from "./components/BlogThree";
 import Footer from "./components/Footer";
 import MobileNav from "./components/MobileNav";
 import SearchPopup from "./components/SearchPopUp";
-import ScrollTopButton from "./components/ScrollTopButton";
-import StickyContactButtons from './components/StickyContactButtons';
 
 export default function Home() {
   return (
@@ -40,8 +37,7 @@ export default function Home() {
         </div>
         <MobileNav />
         <SearchPopup />
-        <ScrollTopButton />
-        <StickyContactButtons />
+
       </div>
     </ParallaxProvider>
   );

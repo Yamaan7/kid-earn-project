@@ -4,6 +4,7 @@ import { CallIcon } from "./CallIcon";
 import HamburgerMenu from "./HamburgerMenu";
 import React, { useState } from 'react';
 import OffcanvasNavbar from "./OffCanvasNavbar";
+import Link from "next/link";
 
 
 export default function Header() {
@@ -48,54 +49,14 @@ export default function Header() {
                         cursor: 'pointer',
                     }}>
                     {/* Use map for dynamic links or handle each link separately */}
-                    <li
-                        className={`nav-link ${activeLink === '/home' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('Home')}
-                    >
-                        Home
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === '/about' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('About')}
-                    >
-                        About
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === 'Pages' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('Pages')}
-                    >
-                        Pages
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === 'Events' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('Events')}
-                    >
-                        Events
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === 'Programs' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('Programs')}
-                    >
-                        Programs
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === 'Shop' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('Shop')}
-                    >
-                        Shop
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === 'News' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('News')}
-                    >
-                        News
-                    </li>
-                    <li
-                        className={`nav-link ${activeLink === 'Contact' ? 'active' : ''}`}
-                        onClick={() => handleLinkClick('Contact')}
-                    >
-                        Contact
-                    </li>
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About</Link>
+                    <li>Pages</li>
+                    <li>Events</li>
+                    <li>Programs</li>
+                    <li>Shop</li>
+                    <li>News</li>
+                    <li>Contact</li>
                 </ul>
             </div>
 
