@@ -11,6 +11,10 @@ import OffcanvasNavbar from '../components/OffCanvasNavbar'
 import Topbar from '../components/Topbar'
 import { FaTrophy } from 'react-icons/fa';  // FontAwesome Trophy icon
 import { GiMoneyStack } from 'react-icons/gi';  // Game Icons for Interest Rate equivalent
+import FunfactOne from '../components/FunFactOne';
+import Testimonials from '../components/TestimonialTwo';
+import TeamTwoSection from '../components/TeamTwoSection';
+import ClientCarousel from '../components/LastSectionAbout';
 
 
 const page = () => {
@@ -203,6 +207,13 @@ const page = () => {
             </section>
 
 
+
+
+
+            <FunfactOne />
+            <Testimonials />
+            <TeamTwoSection />
+            <ClientCarousel />
 
 
 

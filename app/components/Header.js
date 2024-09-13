@@ -8,6 +8,8 @@ import Link from "next/link";
 
 
 export default function Header() {
+    const currentPath = '/';
+
     const [activeLink, setActiveLink] = useState('Home'); // Default active link
 
     const handleLinkClick = (linkName) => {
@@ -48,15 +50,14 @@ export default function Header() {
                         fontSize: '16px',
                         cursor: 'pointer',
                     }}>
-                    {/* Use map for dynamic links or handle each link separately */}
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
-                    <li>Pages</li>
-                    <li>Events</li>
-                    <li>Programs</li>
-                    <li>Shop</li>
-                    <li>News</li>
-                    <li>Contact</li>
+                    <Link href="/" className={`header-Links ${currentPath === '/' ? 'active' : ''}`}>Home</Link>
+                    <Link href="/about" className={`header-Links ${currentPath === '/about' ? 'active' : ''}`}>About</Link>
+                    <Link href="/pages" className={`header-Links ${currentPath === '/pages' ? 'active' : ''}`}>Pages</Link>
+                    <Link href="/events" className={`header-Links ${currentPath === '/events' ? 'active' : ''}`}>Events</Link>
+                    <Link href="/programs" className={`header-Links ${currentPath === '/programs' ? 'active' : ''}`}>Programs</Link>
+                    <Link href="/shop" className={`header-Links ${currentPath === '/shop' ? 'active' : ''}`}>Shop</Link>
+                    <Link href="/news" className={`header-Links ${currentPath === '/news' ? 'active' : ''}`}>News</Link>
+                    <Link href="/contact" className={`header-Links ${currentPath === '/contact' ? 'active' : ''}`}>Contact</Link>
                 </ul>
             </div>
 

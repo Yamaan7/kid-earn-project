@@ -89,14 +89,14 @@ const OffcanvasNavbar = () => {
                             textAlign: 'right',
                             padding: '5px',
                         }}>
-                        <Link href="/">Home</Link>
-                        <Link href="/about">About</Link>
-                        <li>Pages</li>
-                        <li>Events</li>
-                        <li>Programs</li>
-                        <li>Shop</li>
-                        <li>News</li>
-                        <li>Contact</li>
+                        <Link href="/" className="header-Links">Home</Link>
+                        <Link href="/about" className="header-Links">About</Link>
+                        <Link href="/" className="header-Links">Pages</Link>
+                        <Link href="/" className="header-Links">Events</Link>
+                        <Link href="/" className="header-Links">Programs</Link>
+                        <Link href="/" className="header-Links">Shop</Link>
+                        <Link href="/" className="header-Links">News</Link>
+                        <Link href="/" className="header-Links">Contact</Link>
                     </ul>
                     <div className="footer-widget footer-widget--about">
                         <ul className="list-unstyled footer-widget__info">
