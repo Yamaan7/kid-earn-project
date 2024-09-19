@@ -1,8 +1,12 @@
 "use client";
 
+import ExportedImage from "next-image-export-optimizer";
+
 const ServiceOne = () => {
     return (
-        <section className="service-one">
+        <section className="service-one" style={{
+            fontWeight: 'bold',
+        }}>
             <div
                 className="service-one__bg kidearn-splax"
                 data-para-options='{"orientation": "up", "scale": 1.5, "overflow": true}'
@@ -29,7 +33,7 @@ const ServiceOne = () => {
                                     className="service-one__item__image kidearn-tilt"
                                     data-tilt-options='{"glare": false, "maxglare": 0, "maxtilt": 7, "speed": 700, "scale": 1}'
                                 >
-                                    <img src="images/service-1-1.jpg" alt="kidearn" />
+                                    <ExportedImage src="images/service-1-1.jpg" alt="kidearn" width={242} height={272} />
                                 </div>
                                 <div className="service-one__item__ball"></div>
                             </div>
@@ -43,7 +47,7 @@ const ServiceOne = () => {
                                     className="service-one__item__image kidearn-tilt"
                                     data-tilt-options='{"glare": false, "maxglare": 0, "maxtilt": 7, "speed": 700, "scale": 1}'
                                 >
-                                    <img src="images/service-1-2.jpg" alt="kidearn" />
+                                    <ExportedImage src="images/service-1-2.jpg" alt="kidearn" width={250} height={234} />
                                 </div>
                                 <div className="service-one__item__ball"></div>
                             </div>
@@ -57,7 +61,7 @@ const ServiceOne = () => {
                                     className="service-one__item__image kidearn-tilt"
                                     data-tilt-options='{"glare": false, "maxglare": 0, "maxtilt": 7, "speed": 700, "scale": 1}'
                                 >
-                                    <img src="images/service-1-3.jpg" alt="kidearn" />
+                                    <ExportedImage src="images/service-1-3.jpg" alt="kidearn" width={242} height={272} />
                                 </div>
                                 <div className="service-one__item__ball"></div>
                             </div>
@@ -71,7 +75,7 @@ const ServiceOne = () => {
                                     className="service-one__item__image kidearn-tilt"
                                     data-tilt-options='{"glare": false, "maxglare": 0, "maxtilt": 7, "speed": 700, "scale": 1}'
                                 >
-                                    <img src="images/service-1-4.jpg" alt="kidearn" />
+                                    <ExportedImage src="images/service-1-4.jpg" alt="kidearn" width={250} height={234} />
                                 </div>
                                 <div className="service-one__item__ball"></div>
                             </div>

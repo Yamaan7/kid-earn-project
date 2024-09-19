@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import Image from 'next/image';
 import WOW from 'wow.js';
 import 'wow.js/css/libs/animate.css'; // Import WOW.js styles
 import $ from 'jquery';
 import 'jquery-parallax'; // Import jQuery Parallax
+import ExportedImage from 'next-image-export-optimizer';
 
 const FunFactOne = () => {
     useEffect(() => {
@@ -64,19 +64,19 @@ const FunfactOne = () => {
     return (
         <section className="funfact-one">
             <div className="funfact-one__shape1 kidearn-splax" data-para-options='{"orientation": "down", "scale": 1.9, "delay": ".3", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
-                <Image src="/images/funfact-shape-1.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/funfact-shape-1.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="funfact-one__shape2 kidearn-splax" data-para-options='{"orientation": "right", "scale": 1.9, "delay": ".4", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
-                <Image src="/images/funfact-shape-2.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/funfact-shape-2.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="funfact-one__shape3 kidearn-splax" data-para-options='{"orientation": "right", "scale": 1.9, "delay": ".3", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
-                <Image src="/images/funfact-shape-3.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/funfact-shape-3.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="funfact-one__shape4 kidearn-splax" data-para-options='{"orientation": "left", "scale": 1.9, "delay": ".4", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
-                <Image src="/images/funfact-shape-4.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/funfact-shape-4.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="funfact-one__shape5 kidearn-splax" data-para-options='{"orientation": "left", "scale": 1.6, "delay": ".5", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'>
-                <Image src="/images/funfact-shape-5.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/funfact-shape-5.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="container">
                 <div className="row gutter-y-30">
@@ -88,7 +88,7 @@ const FunfactOne = () => {
                                 alignItems: 'center',
                                 textAlign: 'center',
                             }}><span>
-                                    <Image src="/images/graduated.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
+                                    <ExportedImage src="/images/graduated.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
                                 </span></div>
                             <div className="funfact-one__count">
                                 <span className="count-box">
@@ -106,7 +106,7 @@ const FunfactOne = () => {
                                 alignItems: 'center',
                                 textAlign: 'center',
                             }}><span>
-                                    <Image src="/images/online-learning.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
+                                    <ExportedImage src="/images/online-learning.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
                                 </span></div>
                             <div className="funfact-one__count">
                                 <span className="count-box">
@@ -124,7 +124,7 @@ const FunfactOne = () => {
                                 alignItems: 'center',
                                 textAlign: 'center',
                             }}><span>
-                                    <Image src="/images/rating.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
+                                    <ExportedImage src="/images/rating.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
                                 </span></div>
                             <div className="funfact-one__count">
                                 <span className="count-box">
@@ -142,7 +142,7 @@ const FunfactOne = () => {
                                 alignItems: 'center',
                                 textAlign: 'center',
                             }}><span>
-                                    <Image src="/images/instructor.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
+                                    <ExportedImage src="/images/instructor.png" width={70} height={70} style={{ filter: 'invert(1)' }} />
                                 </span></div>
                             <div className="funfact-one__count">
                                 <span className="count-box">

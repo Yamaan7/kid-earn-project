@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -21,7 +21,7 @@ const MobileNav = () => {
 
                 <div className="logo-box">
                     <Link href="/" aria-label="logo image">
-                        <Image src="/images/logo-light.png" width={155} height={50} alt="Logo" />
+                        <ExportedImage src="/images/logo-light.png" width={155} height={50} alt="Logo" />
                     </Link>
                 </div>
 

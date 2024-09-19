@@ -1,14 +1,14 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 
 const TeamTwoSection = () => {
     return (
         <section className="team-two team-two--about-page">
             <div className="team-two__shape-left kidearn-splax" data-para-options='{"orientation": "left", "scale" : 2.1, "overflow" : true}'>
-                <Image src="/images/team-2-shape-1.png" alt="kidearn" width={200} height={200} />
+                <ExportedImage src="/images/team-2-shape-1.png" alt="kidearn" width={200} height={200} />
             </div>
             <div className="team-two__shape-right kidearn-splax" data-para-options='{"orientation": "right", "scale" : 2.1, "overflow" : true}'>
-                <Image src="/images/team-2-shape-2.png" alt="kidearn" width={200} height={200} />
+                <ExportedImage src="/images/team-2-shape-2.png" alt="kidearn" width={200} height={200} />
             </div>
             <div className="container">
                 <div className="sec-title text-center">
@@ -24,7 +24,7 @@ const TeamTwoSection = () => {
                             </svg>
                         </div>
                         <div className="team-card-two__image kidearn-tilt" data-tilt-options='{"glare": false, "maxglare" : 0, "maxtilt" : 5, "speed" : 700, "scale" : 1}'>
-                            <Image src="/images/team-2-1.jpg" alt="Jane Cooper" width={300} height={300} />
+                            <ExportedImage src="/images/team-2-1.jpg" alt="Jane Cooper" width={300} height={300} />
                         </div>
                         <div className="team-card-two__content">
                             <h3 className="team-card-two__title">
@@ -73,7 +73,7 @@ const TeamTwoSection = () => {
                             </svg>
                         </div>
                         <div className="team-card-two__image kidearn-tilt" data-tilt-options='{"glare": false, "maxglare" : 0, "maxtilt" : 5, "speed" : 700, "scale" : 1}'>
-                            <Image src="/images/team-2-2.jpg" alt="Cody Fisher" width={300} height={300} />
+                            <ExportedImage src="/images/team-2-2.jpg" alt="Cody Fisher" width={300} height={300} />
                         </div>
                         <div className="team-card-two__content">
                             <h3 className="team-card-two__title">
@@ -122,7 +122,7 @@ const TeamTwoSection = () => {
                             </svg>
                         </div>
                         <div className="team-card-two__image kidearn-tilt" data-tilt-options='{"glare": false, "maxglare" : 0, "maxtilt" : 5, "speed" : 700, "scale" : 1}'>
-                            <Image src="/images/team-2-3.jpg" alt="Esther Howard" width={300} height={300} />
+                            <ExportedImage src="/images/team-2-3.jpg" alt="Esther Howard" width={300} height={300} />
                         </div>
                         <div className="team-card-two__content">
                             <h3 className="team-card-two__title">

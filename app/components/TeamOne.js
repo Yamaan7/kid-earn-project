@@ -2,6 +2,7 @@
 
 import React from 'react'
 import dynamic from 'next/dynamic';
+import ExportedImage from 'next-image-export-optimizer';
 
 export default function TeamOne() {
 
@@ -80,7 +81,7 @@ export default function TeamOne() {
                                     </svg>
                                 </div>
                                 <div className={`${styles.teamCardImage} kidearn-tilt`} data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
-                                    <Image src={image} alt={name} width={300} height={300} />
+                                    <ExportedImage src={image} alt={name} width={300} height={300} />
                                 </div>
                                 <div className={styles.teamCardContent}>
                                     <h3 className={styles.teamCardTitle}>
@@ -129,7 +130,7 @@ export default function TeamOne() {
                                     className="team-card__image kidearn-tilt"
                                     data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'
                                 >
-                                    <Image src="/images/team-1-2.jpg" alt="Cody fisher" width={500} height={500} />
+                                    <ExportedImage src="/images/team-1-2.jpg" alt="Cody fisher" width={500} height={500} />
                                 </div>
                                 <div className="team-card__content">
                                     <h3 className="team-card__title">
@@ -194,7 +195,7 @@ export default function TeamOne() {
                                     className="team-card__image kidearn-tilt"
                                     data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'
                                 >
-                                    <Image src="/images/team-1-3.jpg" alt="Floyd miles" width={300} height={300} />
+                                    <ExportedImage src="/images/team-1-3.jpg" alt="Floyd miles" width={300} height={300} />
                                 </div>
                                 <div className="team-card__content">
                                     <h3 className="team-card__title">

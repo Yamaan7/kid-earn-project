@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Image from 'next/image';
 import { useParallax } from 'react-scroll-parallax';
+import ExportedImage from 'next-image-export-optimizer';
 
 const MailSubscriptionSection = () => {
   const parallaxBorder = useParallax({
@@ -50,7 +50,7 @@ const MailSubscriptionSection = () => {
               <div className="mc-form__response"></div>
             </div>
             <div ref={parallaxShape.ref} className="mail-one__shape">
-              <Image
+              <ExportedImage
                 src="/images/mail-shape-3.png"
                 alt="kidearn"
                 width={200}

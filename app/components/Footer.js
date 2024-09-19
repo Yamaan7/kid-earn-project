@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { EmailIcon } from './EmailIcon';
 import CallIcon2 from './CallIcon2';
@@ -8,22 +7,23 @@ import { LocationIcon } from './LocationIcon';
 import HamburgerMenu from './HamburgerMenu';
 import ScrollTopButton from './ScrollTopButton';
 import StickyContactButtons from './StickyContactButtons';
+import ExportedImage from 'next-image-export-optimizer';
 
 const Footer = () => {
     return (
         <footer className="main-footer">
             <div className="main-footer__bg"></div>
-            <Image src="/images/footer-s-1-1-rtl.png" className="main-footer__shape-1" alt="kidearn" width={100} height={100} />
-            <Image src="/images/footer-s-1-2-rtl.png" className="main-footer__shape-2" alt="kidearn" width={100} height={100} />
-            <Image src="/images/footer-s-1-3.png" className="main-footer__shape-3" alt="kidearn" width={100} height={100} />
-            <Image src="/images/footer-s-1-4.png" className="main-footer__shape-4" alt="kidearn" width={100} height={100} />
+            <ExportedImage src="/images/footer-s-1-1-rtl.png" className="main-footer__shape-1" alt="kidearn" width={100} height={100} />
+            <ExportedImage src="/images/footer-s-1-2-rtl.png" className="main-footer__shape-2" alt="kidearn" width={100} height={100} />
+            <ExportedImage src="/images/footer-s-1-3.png" className="main-footer__shape-3" alt="kidearn" width={100} height={100} />
+            <ExportedImage src="/images/footer-s-1-4.png" className="main-footer__shape-4" alt="kidearn" width={100} height={100} />
             <div className="main-footer__top">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-xl-4">
                             <div className="footer-widget footer-widget--about">
                                 <Link href="/" className="footer-widget__logo">
-                                    <Image src="/images/logo-light.png" width={160} height={50} alt="Kidearn HTML Template" />
+                                    <ExportedImage src="/images/logo-light.png" width={160} height={50} alt="Kidearn HTML Template" />
                                 </Link>
                                 <ul className="list-unstyled footer-widget__info">
                                     <li>
@@ -92,7 +92,7 @@ const Footer = () => {
                                     {[1, 2, 3, 4, 5, 6].map((num) => (
                                         <li key={num}>
                                             <a className="img-popup" href={`/assets/images/resources/footer-gallery-${num}.png`}>
-                                                <Image src={`/images/footer-gallery-${num}.png`} alt="footer gallery" width={100} height={100} />
+                                                <ExportedImage src={`/images/footer-gallery-${num}.png`} alt="footer gallery" width={100} height={100} />
                                             </a>
                                         </li>
                                     ))}

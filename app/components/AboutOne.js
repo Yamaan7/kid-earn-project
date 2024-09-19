@@ -1,5 +1,6 @@
 "use client";
 
+import ExportedImage from 'next-image-export-optimizer';
 import React from 'react';
 // import styles from './AboutOne.module.css'; // Assuming you're using CSS modules
 
@@ -32,16 +33,19 @@ const AboutOne = () => {
                                 className="about-one__image__one kidearn-tilt"
                                 data-tilt-options='{"glare": false, "maxglare": 0, "maxtilt": 5, "speed": 700, "scale": 1}'
                             >
-                                <img src="images/about-1-1.jpg" alt="kidearn" />
+                                <ExportedImage src="images/about-1-1.jpg" alt="kidearn" width={479} height={482} style={{
+                                    width: '479px',
+                                    height: '482px',
+                                }} />
                             </div>
                             <div className="about-one__image__border wow fadeInUp" data-wow-delay="200ms">
-                                <img src="images/about-1-border.jpg" alt="kidearn" />
+                                <ExportedImage src="images/about-1-border.jpg" alt="kidearn" width={489} height={526} />
                             </div>
                             <div
                                 className="about-one__image__leaf kidearn-splax"
                                 data-para-options='{"orientation": "left", "scale": 1.5, "overflow": true}'
                             >
-                                <img src="images/about-1-leaf-rtl.png" alt="kidearn" />
+                                <ExportedImage src="images/about-1-leaf-rtl.png" alt="kidearn" width={255} height={239} />
                             </div>
                             <div className="about-one__image__ball wow fadeInUp" data-wow-delay="100ms"></div>
                         </div>

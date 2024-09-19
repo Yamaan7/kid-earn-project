@@ -112,22 +112,27 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         };
 
         /**
-         * Get tilt values
-         *
-         * @returns {{x: tilt value, y: tilt value}}
-         */
+   * Get tilt values
+   *
+   * @returns {{x: tilt value, y: tilt value}}
+   */
         var getValues = function getValues() {
             var width = $(this).outerWidth();
             var height = $(this).outerHeight();
             var left = $(this).offset().left;
             var top = $(this).offset().top;
-            var percentageX = (this.mousePositions.x - left) / width;
-            var percentageY = (this.mousePositions.y - top) / height;
+
+            // Check if mousePositions is defined, if not use default values
+            var mouseX = this.mousePositions ? this.mousePositions.x : left + width / 2;
+            var mouseY = this.mousePositions ? this.mousePositions.y : top + height / 2;
+
+            var percentageX = (mouseX - left) / width;
+            var percentageY = (mouseY - top) / height;
             // x or y position inside instance / width of instance = percentage of position inside instance * the max tilt value
             var tiltX = (this.settings.maxTilt / 2 - percentageX * this.settings.maxTilt).toFixed(2);
             var tiltY = (percentageY * this.settings.maxTilt - this.settings.maxTilt / 2).toFixed(2);
             // angle
-            var angle = Math.atan2(this.mousePositions.x - (left + width / 2), -(this.mousePositions.y - (top + height / 2))) * (180 / Math.PI);
+            var angle = Math.atan2(mouseX - (left + width / 2), -(mouseY - (top + height / 2))) * (180 / Math.PI);
             // Return x & y tilt values
             return { tiltX: tiltX, tiltY: tiltY, 'percentageX': percentageX * 100, 'percentageY': percentageY * 100, angle: angle };
         };

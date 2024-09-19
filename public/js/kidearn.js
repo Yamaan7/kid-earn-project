@@ -38,8 +38,8 @@
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
       }, {
-        accY: -50
-      }
+      accY: -50
+    }
     );
   }
 
@@ -69,8 +69,8 @@
           });
         }
       }, {
-        accY: 0
-      }
+      accY: 0
+    }
     );
   }
 
@@ -357,18 +357,27 @@
   function kidearnPara() {
     let kidearnParaElm = $(".kidearn-splax");
     if (kidearnParaElm.length) {
-      kidearnParaElm.each(function () {
-        let self = $(this);
-        let className = self.attr("class");
-        var image = document.getElementsByClassName(className);
-        let options = self.data("para-options");
-        let kidearnPara = new simpleParallax(
-          image,
-          "object" === typeof options ? options : JSON.parse(options)
-        );
-      });
+      if (typeof simpleParallax !== 'undefined') {
+        kidearnParaElm.each(function () {
+          let self = $(this);
+          let className = self.attr("class");
+          var image = document.getElementsByClassName(className);
+          let options = self.data("para-options");
+          let kidearnPara = new simpleParallax(
+            image,
+            "object" === typeof options ? options : JSON.parse(options)
+          );
+        });
+      } else {
+        console.warn('simpleParallax is not defined. Make sure the library is properly loaded.');
+      }
     }
   }
+
+  // Call kidearnPara after the document is fully loaded
+  $(document).ready(function () {
+    kidearnPara();
+  });
 
 
   if ($("#donate-amount__predefined").length) {
@@ -426,8 +435,8 @@
     if ($(this).next().val() > 0) {
       if ($(this).next().val() > 0)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+          .next()
+          .val(+$(this).next().val() - 1);
     }
   });
 
@@ -490,9 +499,21 @@
       kidearnowlCarousel.each(function () {
         let elm = $(this);
         let options = elm.data("owl-options");
-        let thmOwlCarousel = elm.owlCarousel(
-          "object" === typeof options ? options : JSON.parse(options)
-        );
+
+        // Check if options exist and are valid JSON
+        if (options) {
+          try {
+            options = JSON.parse(options);
+          } catch (e) {
+            console.warn("Invalid owl-options format. Using default options.", e);
+            options = {}; // Use empty object as fallback
+          }
+        } else {
+          options = {}; // Use empty object if no options provided
+        }
+
+        let thmOwlCarousel = elm.owlCarousel(options);
+
         elm.find("button").each(function () {
           $(this).attr("aria-label", "carousel button");
         });
@@ -523,8 +544,8 @@
         $("html, body")
           .stop()
           .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
-            },
+            scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          },
             900,
             "easeInOutExpo"
           );
@@ -755,9 +776,9 @@
     var e = document.querySelector(".scroll-top path"),
       t = e.getTotalLength();
     (e.style.transition = e.style.WebkitTransition = "none"),
-    (e.style.strokeDasharray = t + " " + t),
-    (e.style.strokeDashoffset = t),
-    e.getBoundingClientRect(),
+      (e.style.strokeDasharray = t + " " + t),
+      (e.style.strokeDashoffset = t),
+      e.getBoundingClientRect(),
       (e.style.transition = e.style.WebkitTransition =
         "stroke-dashoffset 10ms linear");
     var o = function () {

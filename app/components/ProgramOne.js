@@ -1,8 +1,8 @@
 "use client"; // Ensures this component is rendered on the client-side
 
 import React from 'react';
-import Image from 'next/image';
 import RightArrowIcon from './RightArrowIcon';  // Adjust the path as necessary
+import ExportedImage from 'next-image-export-optimizer';
 
 const ProgramOne = () => {
     return (
@@ -11,7 +11,7 @@ const ProgramOne = () => {
                 className="program-one__bg kidearn-splax"
                 data-para-options='{"orientation": "up", "scale": 2.5, "overflow": true}'
             >
-                <Image src="/images/program-bg-shape.png" alt="kidearn" width={100} height={100} />
+                <ExportedImage src="/images/program-bg-shape.png" alt="kidearn" width={100} height={100} />
             </div>
             <div className="container">
                 <div className="sec-title text-center">
@@ -36,7 +36,7 @@ const ProgramOne = () => {
                             </div>
                             <div className="program-one__item__bg"></div>
                             <div className="program-one__item__image">
-                                <Image src="/images/program-1-1.jpg" alt="Toddler" width={400} height={300} />
+                                <ExportedImage src="/images/program-1-1.jpg" alt="Toddler" width={400} height={300} />
                             </div>
                             <div className="program-one__item__content">
                                 <h3 className="program-one__item__title"><a href="programs-d-toddler.html">Toddler</a></h3>
@@ -63,7 +63,7 @@ const ProgramOne = () => {
                             </div>
                             <div className="program-one__item__bg"></div>
                             <div className="program-one__item__image">
-                                <Image src="/images/program-1-2.jpg" alt="Preschool" width={400} height={300} />
+                                <ExportedImage src="/images/program-1-2.jpg" alt="Preschool" width={400} height={300} />
                             </div>
                             <div className="program-one__item__content">
                                 <h3 className="program-one__item__title"><a href="programs-d-preschool.html">Preschool</a></h3>
@@ -92,7 +92,7 @@ const ProgramOne = () => {
                             </div>
                             <div className="program-one__item__bg"></div>
                             <div className="program-one__item__image">
-                                <Image src="/images/program-1-3.jpg" alt="Kindergarten" width={400} height={300} />
+                                <ExportedImage src="/images/program-1-3.jpg" alt="Kindergarten" width={400} height={300} />
                             </div>
                             <div className="program-one__item__content">
                                 <h3 className="program-one__item__title"><a href="programs-d-kindergarten.html">Kindergarten</a></h3>
@@ -119,7 +119,7 @@ const ProgramOne = () => {
                             </div>
                             <div className="program-one__item__bg"></div>
                             <div className="program-one__item__image">
-                                <Image src="/images/program-1-4.jpg" alt="Flex-care" width={400} height={300} />
+                                <ExportedImage src="/images/program-1-4.jpg" alt="Flex-care" width={400} height={300} />
                             </div>
                             <div className="program-one__item__content">
                                 <h3 className="program-one__item__title"><a href="programs-d-flex-care.html">Flex-care</a></h3>

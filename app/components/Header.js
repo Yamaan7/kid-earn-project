@@ -52,11 +52,9 @@ export default function Header() {
                     }}>
                     <Link href="/" className={`header-Links ${currentPath === '/' ? 'active' : ''}`}>Home</Link>
                     <Link href="/about" className={`header-Links ${currentPath === '/about' ? 'active' : ''}`}>About</Link>
-                    <Link href="/pages" className={`header-Links ${currentPath === '/pages' ? 'active' : ''}`}>Pages</Link>
+                    <Link href="/prices" className={`header-Links ${currentPath === '/prices' ? 'active' : ''}`}>Prices</Link>
                     <Link href="/events" className={`header-Links ${currentPath === '/events' ? 'active' : ''}`}>Events</Link>
-                    <Link href="/programs" className={`header-Links ${currentPath === '/programs' ? 'active' : ''}`}>Programs</Link>
-                    <Link href="/shop" className={`header-Links ${currentPath === '/shop' ? 'active' : ''}`}>Shop</Link>
-                    <Link href="/news" className={`header-Links ${currentPath === '/news' ? 'active' : ''}`}>News</Link>
+                    <Link href="/employment" className={`header-Links ${currentPath === '/employment' ? 'active' : ''}`}>Employment</Link>
                     <Link href="/contact" className={`header-Links ${currentPath === '/contact' ? 'active' : ''}`}>Contact</Link>
                 </ul>
             </div>

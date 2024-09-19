@@ -67,6 +67,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/styles/kidearn-custom-rtl.css" />
         <link rel="stylesheet" href="/styles/kidearn-toolbar.css" />
         <link rel="stylesheet" href="/styles/style.css" />
+
+        <Script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js" />
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

@@ -1,9 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { EmailIcon } from './EmailIcon';
 import CallIcon2 from './CallIcon2';
 import { LocationIcon } from './LocationIcon';
+import ExportedImage from 'next-image-export-optimizer';
 
 const OffcanvasNavbar = () => {
     return (
@@ -56,7 +56,7 @@ const OffcanvasNavbar = () => {
                     alignItems: 'flex-start',
                 }}>
                     <Link href="/" className="footer-widget__logo">
-                        <Image src="/images/logo-light.png" width={160} height={50} alt="Kidearn HTML Template" />
+                        <ExportedImage src="/images/logo-light.png" width={160} height={50} alt="Kidearn HTML Template" />
                     </Link>
                     {/* <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                         Backdrop with scrolling
@@ -92,11 +92,11 @@ const OffcanvasNavbar = () => {
                         <Link href="/" className="header-Links">Home</Link>
                         <Link href="/about" className="header-Links">About</Link>
                         <Link href="/" className="header-Links">Pages</Link>
-                        <Link href="/" className="header-Links">Events</Link>
+                        <Link href="/events" className="header-Links">Events</Link>
                         <Link href="/" className="header-Links">Programs</Link>
                         <Link href="/" className="header-Links">Shop</Link>
                         <Link href="/" className="header-Links">News</Link>
-                        <Link href="/" className="header-Links">Contact</Link>
+                        <Link href="/contact" className="header-Links">Contact</Link>
                     </ul>
                     <div className="footer-widget footer-widget--about">
                         <ul className="list-unstyled footer-widget__info">

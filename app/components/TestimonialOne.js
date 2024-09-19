@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RightArrowIcon from './RightArrowIcon';
+import ExportedImage from 'next-image-export-optimizer';
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -26,7 +27,7 @@ const TestimonialOne = () => {
                 className="testimonial-one__pen kidearn-splax"
                 data-para-options='{"orientation": "left", "scale": 2.5, "overflow": true}'
             >
-                <img src="images/pen-rtl.png" alt="kidearn" />
+                <ExportedImage src="images/pen-rtl.png" alt="kidearn" width={320} height={265} />
             </div>
             <div className="container">
                 <div className="testimonial-one__area">
@@ -37,10 +38,10 @@ const TestimonialOne = () => {
                         data-para-options='{"orientation": "down", "scale": 1.5, "delay": ".3", "transition": "cubic-bezier(0,0,0,1)", "overflow": true}'
                     ></div>
                     <div className="testimonial-one__star-left">
-                        <img src="images/star1.png" alt="kidearn" />
+                        <ExportedImage src="images/star1.png" alt="kidearn" width={39} height={38} />
                     </div>
                     <div className="testimonial-one__star-right">
-                        <img src="images/star2.png" alt="kidearn" />
+                        <ExportedImage src="images/star2.png" alt="kidearn" width={39} height={38} />
                     </div>
                     <div className="sec-title text-center">
                         <h6 className="sec-title__tagline">Testimonial</h6>
@@ -58,7 +59,7 @@ const TestimonialOne = () => {
                                     process
                                 </div>
                                 <div className="testimonial-one__item__author">
-                                    <img src="images/testi-author-1.png" alt="kidearn" />
+                                    <ExportedImage src="images/testi-author-1.png" alt="kidearn" width={46} height={46} />
                                     <h5 className="testimonial-one__item__author__name">Savannah Nguyen</h5>
                                     <p className="testimonial-one__item__author__designation">Martin’s Father</p>
                                 </div>
@@ -72,7 +73,7 @@ const TestimonialOne = () => {
                                     process
                                 </div>
                                 <div className="testimonial-one__item__author">
-                                    <img src="images/testi-author-2.png" alt="kidearn" />
+                                    <ExportedImage src="images/testi-author-2.png" alt="kidearn" width={46} height={46} />
                                     <h5 className="testimonial-one__item__author__name">Sarah Taylor</h5>
                                     <p className="testimonial-one__item__author__designation">Martin’s Mother</p>
                                 </div>

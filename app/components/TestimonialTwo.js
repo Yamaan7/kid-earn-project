@@ -1,10 +1,10 @@
 "use client";
 
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RightArrowIcon from './RightArrowIcon';
+import ExportedImage from 'next-image-export-optimizer';
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -24,10 +24,10 @@ const TestimonialTwo = () => {
     return (
         <section className="testimonial-one testimonial-one--home-two testimonial-one--about-page">
             <div className="testimonial-one__left-shape kidearn-splax" data-para-options='{"orientation": "left", "scale": 2.5, "overflow": true}'>
-                <Image src="/images/testimonial-shape-2.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/testimonial-shape-2.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="testimonial-one__right-shape kidearn-splax" data-para-options='{"orientation": "right", "scale": 2.5, "overflow": true}'>
-                <Image src="/images/testimonial-shape-3.png" alt="kidearn" width={100} height={100} layout="responsive" />
+                <ExportedImage src="/images/testimonial-shape-3.png" alt="kidearn" width={100} height={100} layout="responsive" />
             </div>
             <div className="container">
                 <div className="testimonial-one__area">
@@ -50,7 +50,7 @@ const TestimonialTwo = () => {
                                     Flexible Classes refers to the process flexible Classes refers to the process
                                 </div>
                                 <div className="testimonial-one__item__author">
-                                    <Image src="/images/testi-author-1.png" alt="kidearn" width={60} height={60} />
+                                    <ExportedImage src="/images/testi-author-1.png" alt="kidearn" width={60} height={60} />
                                     <h5 className="testimonial-one__item__author__name">Savannah Nguyen</h5>
                                     <p className="testimonial-one__item__author__designation">Martin's Father</p>
                                 </div>
@@ -64,7 +64,7 @@ const TestimonialTwo = () => {
                                     Flexible Classes refers to the process flexible Classes refers to the process
                                 </div>
                                 <div className="testimonial-one__item__author">
-                                    <Image src="/images/testi-author-2.png" alt="kidearn" width={60} height={60} />
+                                    <ExportedImage src="/images/testi-author-2.png" alt="kidearn" width={60} height={60} />
                                     <h5 className="testimonial-one__item__author__name">Sarah Taylor</h5>
                                     <p className="testimonial-one__item__author__designation">Martin's Mother</p>
                                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 const ClientCarousel = () => {
     const settings = {
@@ -48,7 +48,7 @@ const ClientCarousel = () => {
                 <Slider {...settings}>
                     {[...Array(10)].map((_, index) => (
                         <div className="client-carousel__one__item" key={index}>
-                            <Image src="/images/brand-1-1.png" alt="kidearn" width={160} height={100} />
+                            <ExportedImage src="/images/brand-1-1.png" alt="kidearn" width={160} height={100} />
                         </div>
                     ))}
                 </Slider>

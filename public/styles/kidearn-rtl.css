@@ -11423,6 +11423,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .banner-one__shape4 {
+  width: auto !important;
   position: absolute;
   right: -48px;
   top: 12px;
