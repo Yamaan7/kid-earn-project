@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Link from 'next/link';
 import ExportedImage from 'next-image-export-optimizer';
+import EventsGallery from '../components/EventsGallary';
 
 
 const page = () => {
@@ -150,7 +151,7 @@ const page = () => {
                 </div>
             </section>
 
-
+            <EventsGallery />
             <Footer />
         </div>
     )
