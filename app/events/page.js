@@ -151,6 +151,14 @@ const page = () => {
                 </div>
             </section>
 
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
+                <h3>Grid Gallery</h3>
+            </div>
+
             <EventsGallery />
             <Footer />
         </div>

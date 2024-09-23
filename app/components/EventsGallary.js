@@ -4,51 +4,42 @@ import React from 'react';
 import ExportedImage from 'next-image-export-optimizer';
 
 const EventsGallery = () => {
+    const galleryImages = [
+        '/images/gallery-1-1.jpg',
+        '/images/gallery-1-2.jpg',
+        '/images/gallery-1-3.jpg',
+        '/images/gallery-1-4.jpg',
+        '/images/gallery-1-5.jpg',
+        '/images/gallery-1-6.jpg',
+        '/images/gallery-1-7.jpg',
+        '/images/gallery-1-8.jpg',
+        '/images/gallery-1-9.jpg',
+    ];
+
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            margin: 'auto',
-            marginBottom: '40px', // Added margin to the bottom of the gallery
-        }}>
-            <h2 style={{
-                fontSize: '2rem',
-                fontWeight: 'bold',
-                marginBottom: '20px',
-                textAlign: 'center',
-            }}>
-                Exhibition
-            </h2>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '20px',
-                alignItems: 'center',
-            }}>
-                {[1, 4, 7].map((startIndex, rowIndex) => (
-                    <div key={rowIndex} style={{
-                        display: 'flex',
-                        gap: '20px',
-                        justifyContent: 'center',
-                    }}>
-                        {[0, 1, 2].map((offset) => (
-                            <ExportedImage
-                                key={startIndex + offset}
-                                src={`/images/gallerynew${startIndex + offset}.webp`}
-                                width={356}
-                                height={280}
-                                style={{
-                                    width: '356px',
-                                    height: '280px',
-                                    borderRadius: '15px',
-                                }}
-                            />
-                        ))}
-                    </div>
-                ))}
+        <section className="gallery-one gallery-one--page">
+            <div className="container">
+                <div className="row">
+                    {galleryImages.map((image, index) => (
+                        <div key={index} className="col-md-6 col-lg-4">
+                            <div className="gallery-one__card">
+                                <ExportedImage
+                                    src={image}
+                                    alt=""
+                                    width={370}
+                                    height={367}
+                                />
+                                <div className="gallery-one__card__hover">
+                                    <a href={`assets/images/gallery/${image.split('/').pop()}`} className="img-popup">
+                                        <span className="gallery-one__card__icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
